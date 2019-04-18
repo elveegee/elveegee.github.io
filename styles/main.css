@@ -5,7 +5,11 @@ h1, h2, h2, h3, h4, h5, p, a {
 }
 
 h1 {
-  font-size: 48px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: normal;
 }
 
 /* NAVBAR */
@@ -107,24 +111,16 @@ nav a:hover::before {
 }
 
 .hero img {
-  width: 35%;
+  width: 320px;
   display: inline;
   float: left;
 }
 
 .hero h1 {
   color: white;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.5rem;
-  line-height: normal;
-  letter-spacing: -0.03em;
-  display: inline;
-  min-width: 30%;
-  /*position: absolute;
-  right: 60px;
-  bottom: 55%;*/
+  display: inline-block;
+  margin-top: 84px;
+  margin-left: 20px;
 }
 
 .hero h1 span {
@@ -140,7 +136,6 @@ nav a:hover::before {
   line-height: normal;
   letter-spacing: -0.03em;
   display: block;
-  padding: 30px 0;
 }
 
 section.projects {
@@ -171,4 +166,8 @@ section.projects {
 .project button {
   position: absolute;
   bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
