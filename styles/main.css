@@ -1,6 +1,14 @@
+/* DEFAULTS */
+
 h1, h2, h2, h3, h4, h5, p, a {
   font-family: 'Rubik', sans-serif;
 }
+
+h1 {
+  font-size: 48px;
+}
+
+/* NAVBAR */
 
 .container {
   width: 90%;
@@ -8,8 +16,10 @@ h1, h2, h2, h3, h4, h5, p, a {
 }
 
 header{
-  background-color: black;
-  opacity: .5;
+  background-color: hsla(0, 0%, 100%, 0.0);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 header::after {
@@ -43,14 +53,13 @@ nav ul li {
 }
 
 nav a {
-  color: #D3D3D3;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav a:hover{
-  color: #F3CF58;
-  opacity: 1;
+  color: #DC6464;
 }
 
 nav a::before{
@@ -58,31 +67,107 @@ nav a::before{
   display: block;
   height: 3px;
   width:  0%;
-  background-color: white;
+  background-color: #DC6464;
   position: absolute;
   top: 45%;
   transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before   {
-  width:  100%;
+nav a:hover::before {
+  width: 100%;
 }
 
+/* HERO */
 
-/*
-.hero img {
-  position: relative;
-  z-index: 90;
-  opacity: 0.5;
+.hero {
+  width: 100%;
+  height: 700px;
+  background-color: black;
+  background-image: url(../images/lucas-bg-wide.png);
+  background-position: right;
+  background-size: cover;
 }
 
 .hero .overlay {
-  display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(58.4deg, #383838 0%, rgba(56, 56, 56, 0.79) 100%);
-  position: absolute;
-  z-index: 100;
+  background: rgb(57,57,57);
+  background: linear-gradient(69deg, rgba(57,57,57,1) 0%, rgba(57,57,57,0.9808298319327731) 28%, rgba(57,57,57,0.7567401960784313) 100%);
+  margin: 0 auto;
 }
 
-*/
+
+.overlay .container {
+  /*border: 1px solid red;*/
+  width: 80%;
+  height: 75%;
+  margin: 0 auto;
+  position: relative;
+  top: 10%;
+}
+
+.hero img {
+  width: 35%;
+  display: inline-block;
+}
+
+.hero h1 {
+  color: white;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  display: inline-block;
+  min-width: 30%;
+  position: absolute;
+  right: 60px;
+  bottom: 55%;
+}
+
+.hero h1 span {
+  color: #F3CF58;
+}
+
+.hero h2{
+  color: white;
+  clear: left;
+  font-family: Rubik;
+  font-weight:200;
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  display: block;
+  padding: 30px 0;
+}
+
+section.projects {
+  background-color: E5E5E5;
+}
+
+.project {
+  /*border: 2px solid blue;*/
+  height:480px;
+  margin: 100px auto;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.project .left {
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+}
+
+.project .container {
+  background-color: blue;
+  height: 90%;
+}
+
+.project button {
+  position: absolute;
+  bottom: 0;
+}
