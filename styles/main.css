@@ -108,7 +108,8 @@ nav a:hover::before {
 
 .hero img {
   width: 35%;
-  display: inline-block;
+  display: inline;
+  float: left;
 }
 
 .hero h1 {
@@ -116,21 +117,21 @@ nav a:hover::before {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 2.5rem;
   line-height: normal;
   letter-spacing: -0.03em;
-  display: inline-block;
+  display: inline;
   min-width: 30%;
-  position: absolute;
+  /*position: absolute;
   right: 60px;
-  bottom: 55%;
+  bottom: 55%;*/
 }
 
 .hero h1 span {
   color: #F3CF58;
 }
 
-.hero h2{
+.hero h3{
   color: white;
   clear: left;
   font-family: Rubik;
