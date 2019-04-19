@@ -128,7 +128,7 @@ nav a:hover::before {
 
 
 .overlay .container {
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   width: 80%;
   height: 75%;
   margin: 0 auto;
@@ -137,28 +137,28 @@ nav a:hover::before {
   max-width: 1200px;
 }
 
+.hero img {
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+}
+
 .hero .img-wrapper{
   width: 33%;
   height: 233px;
-  background-color: blue;
+  background-color:blue;
   margin: 0;
   padding: 0;
   float: left;
   position: relative;
 }
 
-.hero img {
-  width: 90%;
-  position:absolute;
-  bottom: 0;
-}
-
 .hero .h1-wrapper {
   height: 233px;
   width: 67%;
-  background-color: pink;
-  position: relative;
+  background-color: red;
   float: right;
+  position: relative;
 }
 
 .hero h1 {
@@ -166,11 +166,12 @@ nav a:hover::before {
   /*display: inline-block;
   margin-top: 84px;
   margin-left: 20px;*/
-  margin: 0;
   font-size: 3rem;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
+  margin: 0;
 }
+
 
 .hero h1 span {
   color: #F3CF58;
@@ -184,15 +185,6 @@ nav a:hover::before {
   line-height: normal;
   letter-spacing: -0.03em;
   display: block;
-  padding-top: 10px;
-}
-
-.hero .arrow {
-  width: 100px;
-  display: block;
-  margin: 0 auto;
-  position: static;
-  padding-top: 20px;
 }
 
 /* CASE STUDY CARDS */
@@ -251,82 +243,26 @@ section.projects {
   margin: 0;
 }
 
-/*screens 1025-1280 /// big landscape tablets, laptops, and desktops */
-@media only screen and (max-width: 1280px) {
-  .hero h1 {
-    font-size: 3.7vw;
-  }
-  .hero h3 {
-    font-size: 2.4vw;
-  }
-}
-
-/*screens 961 - 1024 /// tablet, landscape iPad, lo-res laptops ands desktops */
-@media only screen and (max-width: 1024px) {
-
-  .hero {
-    height: 600px;
-  }
-
-  .hero .h1-wrapper, .hero .img-wrapper {
-    height: 180px;
+.dad {
+  width: 60%;
+  height: 300px;
+  background-color: gray;
+  margin: 100px auto;
 
 }
 
-/*screens 641-960 /// portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media only screen and (max-width: 960px) {
-
-  .hero {
-    height: 960px;
-  }
-
-  .hero .img-wrapper {
-    width: 300px;
-  }
-
-  .hero .h1-wrapper {
-    float: left;
-    width: 100%;
-    height: 50px;
-  }
-
-  .hero h1 {
-    font-size: 5vw;
-    top: 0;
-    bottom: ;
-  }
-
-  .hero h3 {
-    font-size: 2.4vw;
-    clear: both;
-  }
+.dad .col-left {
+  width: 25%;
+  height: 300px;
+  background-color: blue;
+  float:left;
 
 }
 
-/*screens 481-640 /// portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide */
-@media only screen and (max-width: 640px) {
+.dad .col-right {
+  width: 75%;
+  height: 300px;
+  background-color: red;
+  float:right;
 
 }
-
-/*screens 320-480 /// smartphones, iPhone, portrait 480x320 phones */
-@media only screen and (max-width: 480px) {
-
-}
-
-/*
-
-@media (min-width:320px)  {  smartphones, iPhone, portrait 480x320 phones  }
-@media (min-width:481px)  {  portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
-@media (min-width:641px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
-@media (min-width:961px)  {  tablet, landscape iPad, lo-res laptops ands desktops  }
-@media (min-width:1025px) {  big landscape tablets, laptops, and desktops  }
-@media (min-width:1281px) {  hi-res laptops and desktops  }
-
-@media (max-width:480px)  {  smartphones, iPhone, portrait 480x320 phones  }
-@media (max-width:640px)  {  portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
-@media (max-width:960px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
-@media (max-width:1024px)  {  tablet, landscape iPad, lo-res laptops ands desktops  }
-@media (max-width:1280px) {  big landscape tablets, laptops, and desktops  }
-@media (everything else will be) {  hi-res laptops and desktops  }
-
-*/
