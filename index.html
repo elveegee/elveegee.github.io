@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="home" lang="en-us">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,14 +20,17 @@
 
 <!--Header and Navbar-->
 
-    <header>
+    <header id="navbar">
       <div class="container">
-        <img class="logo small" src="images/logo.png"/>
+        <img id="smalllogo" class="logo small" src="images/logo-white.png"/>
         <nav class="navlinks">
           <ul>
             <li><a href="#">Work</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="burger">
+            <li><a id="burger" onclick="openMenu()" href="#"><i class="fas fa-bars" ></i></a></li>
           </ul>
         </nav>
       </div>
@@ -52,29 +55,39 @@
       </div>
     </section>
 
+<!-- MENU TRAY -->
+
+    <div class="menu-tray" id="menu-tray">
+        <ul>
+          <li><i class="fas fa-times" onclick="closeMenu()"></i></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
 <!-- CASE STUDY CARDS -->
 
-<section class="projects">
-  <div class="container project light">
-    <div class="left">
-      <div class="container">
-      <h1>Bróg</h1>
-      <p>UX | UI | Concept | Branding</p>
-      <h4>Mobile app for language learning, focused specifically on improving your spoken accent.</h4>
-      <button>See Case Study</button>
+    <section class="projects">
+      <div class="container project light">
+        <div class="left">
+          <div class="container">
+          <h1>Bróg</h1>
+          <p>UX | UI | Concept | Branding</p>
+          <h4>Mobile app for language learning, focused specifically on improving your spoken accent.</h4>
+          <button>See Case Study</button>
+          </div>
+        </div>
+        <div class="right">
+        </div>
       </div>
-    </div>
-    <div class="right">
-    </div>
-  </div>
-  <div class="container project dark">
-  </div>
-  <div class="container project light">
-  </div>
-</section>
+      <div class="container project dark">
+      </div>
+      <div class="container project light">
+      </div>
+    </section>
 
-    </div>
-
+    <script src="scripts/menu.js"></script>
   </body>
 
 </html>
