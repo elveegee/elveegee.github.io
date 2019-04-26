@@ -1,9 +1,11 @@
 function openMenu() {
-  document.getElementById('menu-tray').style.display="block";
+  document.getElementById('menu-tray').style.height="80vh";
+  document.getElementById('menu-list').style.display="block";
 }
 
 function closeMenu() {
-  document.getElementById('menu-tray').style.display="none";
+  document.getElementById('menu-tray').style.height="0vh";
+  document.getElementById('menu-list').style.display="none";
 }
 
 function runOnScroll() {
