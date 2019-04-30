@@ -10,7 +10,7 @@ function closeMenu() {
 
 function runOnScroll() {
   var navbar = document.querySelector('#navbar');
-    if (window.scrollY <= 300) {
+    if (window.scrollY <= 20) {
       navbar.classList.remove('white');
       document.getElementById('smalllogo').style.display="none";
     } else {
