@@ -1,0 +1,218 @@
+/*
+Gray 1 #F6F5F3
+Gray 2 #E4E3E2
+Gray 3 #D5D4D1
+Gray 4 #9E9B94
+Gray 5 #6E6A63
+Gray 6 #3C3A36
+
+Red #FF5B56
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #3C3A36;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* This is just the frame for my "chunk of content" divs*/
+
+.my-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gray1 {
+  background-color: #F6F5F3;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Breaking content chunks into 2 or 3 columns */
+
+div.one-half {
+  width: 50%;
+  padding: 60px 3rem;
+  min-width: 500px;
+}
+
+div.one-third {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 3rem;
+  min-width: 200px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* This is the template for the ONE-HALF object that has text/headline/paragraph on one half and image on other. */
+
+.title-headline-p .content{
+  padding: 20px 0;
+}
+
+.one-half.title-headline-p h4{
+  color: #6E6A63;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.one-half.title-headline-p h2{
+  color: #3C3A36;
+  line-height: 2.6rem;
+  margin-bottom: 18px;
+}
+
+.one-half.title-headline-p p{
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.one-half.example-image img{
+  width: 100%;
+}
+
+div.one-half.title-headline-p .content, div.one-half.example-image .content {
+  border: ;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.one-half.example-image .content {
+  align-items: center;
+}
+
+div.one-half.example-image a {
+  color: #FF5B56;
+  text-transform: uppercase;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* These CHAPTER HEADINGS are when I break out the sections (Research, UX Design, UI Design, etc) */
+
+div.chapter-heading {
+  height: 500px;
+  width: 100%;
+}
+
+.chapter-heading .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/research-bg.png);
+  background-size: auto;
+}
+
+.chapter-heading .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsla( 40, 15%, 96%, 0.8);
+  border: 14px solid #F3CF58;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-heading .overlay h1 {
+  color: #6E6A63;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: -.05rem;
+}
+
+#ux-design .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/research-bg.png);
+  background-size: cover;
+}
+
+#ui-design .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/ui-design-bg.png);
+  background-size: cover;
+}
+
+#branding .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/branding-bg.png);
+  background-size: cover;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the Challenge/Solution chunk in the intro. */
+
+#challenge .right-half {
+  background-color: hsla(40, 14%, 92%, 1);
+}
+
+#challenge .title {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #F35858;
+  margin-bottom: .5rem;
+}
+
+#challenge .right-half .title {
+  color: #FF9E61;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the Roles/Deliverables/Tools chunk in the intro. */
+
+#roles h3 {
+  font-weight: 600;
+  color: #3C3A36;
+  letter-spacing: -.05rem;
+}
+
+#roles ul {
+  padding: 1.2rem;
+}
+
+#roles li {
+  list-style: none;
+  text-align: center;
+  padding: .75rem;
+  color: #3C3A36;
+  font-size: 1.25rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the Challenge/Solution chunk in the intro. */
