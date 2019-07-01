@@ -16,8 +16,44 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
+      <div class="container">
+        <img src="../images/logo-white.png" />
+        <nav class="navlinks">
+          <ul>
+            <li><a href="html/case-study.html">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="burger">
+            <li><a id="burger" onclick="openMenu()" href="#"><i class="fas fa-bars" ></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <section class="hero">
+        <img src="../images/photos.png" />
+    </section>
+
+    <header class="second-header">
+      <ul>
+        <li><a href="#">Summary</a></li>
+        <li><a href="#">Research & Strategy</a></li>
+        <li><a href="#">UX Design</a></li>
+        <li><a href="#">UI Design</a></li>
+        <li><a href="#">Final Product</a></li>
+      </ul>
+    </header>
+
+    <section class="my-section white single-column" id="summary">
+      <div class="single-column centered">
+          <h1>BROG</h1>
+          <p>Bróg (“brogue”), a mobile app for language-learning, interconnects a network of global users, focusing on a narrow goal of improving their foreign language accents.  Users submit daily pronunciation videos for review, and in turn review others, while earning badges for their progress.
+          </p>
+          <button class="ghost">See Prototype</button>
+      </div>
+    </section>
 
     <section class="my-section gray1" id="challenge">
       <div class="one-half left-half">
@@ -73,6 +109,7 @@
       </div>
     </section>
 
+<!----------------------------------------------------------------------------->
 <!--RESEARCH SECTION -->
     <section>
 
@@ -98,6 +135,15 @@
             <img src="../images/comp-an.png"/>
             <a href="https://www.google.com">View Full Analysis</a>
           </div>
+        </div>
+      </div>
+
+      <div class="choice my-section single-column">
+        <div class="container">
+          <h1>CHOICE!</h1>
+          <p>
+            After analyzing the market, I made a choice to focus my design around brief daily usage, as opposed to larger drawn-out engagement.  More like a weather app, less like Twitter.
+          </p>
         </div>
       </div>
 
