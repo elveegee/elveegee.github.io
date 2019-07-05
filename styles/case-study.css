@@ -9,6 +9,8 @@ Gray 6 #3C3A36
 Red #FF5B56
 
 Yellow #F3CF58
+
+Orange #FF9E61
 */
 
 * {
@@ -197,12 +199,16 @@ nav ul.burger {
 
 /*This one is for single-column chunks.*/
 
-.my-section.single-column {
-  display: flex;
+.single-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px;
+}
 
+.single-column img {
+  width: 90%;
+  margin-top: 40px;
 }
 
 .gray1 {
@@ -227,8 +233,12 @@ nav ul.burger {
   margin-bottom: 10px;
 }
 
-.choice p {
+.choice p, .choice li {
   color: #F6F5F3;
+}
+
+.choice span {
+  color: #FF9E61;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -241,7 +251,32 @@ div.single-column.centered {
   align-items: center;
   max-width: 860px;
   padding: 60px;
+}
 
+div.single-column.leftjust {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 860px;
+  padding: 60px;
+}
+
+div.single-column .flexbox-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 32px;
+}
+
+div.single-column .flexbox-gallery img{
+  width: 180px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
+-moz-box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
+box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
 }
 
 div.one-half {
@@ -286,28 +321,34 @@ button.ghost {
 /*-----------------------------------------------------------------------------*/
 /* This is the template for the ONE-HALF object that has text/headline/paragraph on one half and image on other. */
 
-.title-headline-p .content{
+.title-headline-p{
   padding: 20px 0;
+  max-width: 960px;
 }
 
-.one-half.title-headline-p h4{
+.title-headline-p.skinny{
+  padding: 20px 0;
+  max-width: 768px;
+}
+
+.title-headline-p h4{
   color: #6E6A63;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.one-half.title-headline-p h2{
+.title-headline-p h2{
   color: #3C3A36;
   line-height: 2.6rem;
   margin-bottom: 18px;
 }
 
-.one-half.title-headline-p p{
+.title-headline-p p{
   font-weight: 300;
   font-size: 1.2rem;
 }
 
-.one-half.example-image img{
+.example-image img{
   width: 100%;
 }
 
@@ -427,4 +468,59 @@ div.chapter-heading {
 }
 
 /*-----------------------------------------------------------------------------*/
-/* Specific to the Challenge/Solution chunk in the intro. */
+/* Specific to the RESEARCH GRAPHS chunk in the intro. */
+
+#research-graphs {
+  background-color: #6E6A63;
+  padding: 60px 0 0 0;
+}
+
+#research-graphs h1{
+  color: #F6F5F3;
+  margin: 0px auto 60px;
+
+}
+
+#research-graphs .graph-row {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#research-graphs .graph-row img{
+  height: 80%;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the PEROSONAS chunk in the UX Research area. */
+
+
+#personas .my-section {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#personas img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#personas h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+#personas .one-third {
+  align-items: flex-start;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+#personas .one-third p{
+  font-size: 1rem;
+}
