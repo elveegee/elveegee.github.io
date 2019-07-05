@@ -16,8 +16,44 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
+      <div class="container">
+        <img src="../images/logo-white.png" />
+        <nav class="navlinks">
+          <ul>
+            <li><a href="html/case-study.html">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="burger">
+            <li><a id="burger" onclick="openMenu()" href="#"><i class="fas fa-bars" ></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <section class="hero">
+        <img src="../images/photos.png" />
+    </section>
+
+    <header class="second-header">
+      <ul>
+        <li><a href="#">Summary</a></li>
+        <li><a href="#">Research & Strategy</a></li>
+        <li><a href="#">UX Design</a></li>
+        <li><a href="#">UI Design</a></li>
+        <li><a href="#">Final Product</a></li>
+      </ul>
+    </header>
+
+    <section class="my-section white single-column" id="summary">
+      <div class="single-column centered">
+          <h1>BROG</h1>
+          <p>Bróg (“brogue”), a mobile app for language-learning, interconnects a network of global users, focusing on a narrow goal of improving their foreign language accents.  Users submit daily pronunciation videos for review, and in turn review others, while earning badges for their progress.
+          </p>
+          <button class="ghost">See Prototype</button>
+      </div>
+    </section>
 
     <section class="my-section gray1" id="challenge">
       <div class="one-half left-half">
@@ -73,6 +109,7 @@
       </div>
     </section>
 
+<!----------------------------------------------------------------------------->
 <!--RESEARCH SECTION -->
     <section>
 
@@ -101,6 +138,15 @@
         </div>
       </div>
 
+      <div class="choice my-section single-column">
+        <div class="container">
+          <h1>CHOICE!</h1>
+          <p>
+            After analyzing the market, I made a choice to focus my design around brief daily usage, as opposed to larger drawn-out engagement.  More like a weather app, less like Twitter.
+          </p>
+        </div>
+      </div>
+
       <div class="my-section" id="user-research">
         <div class="one-half right-half example-image">
           <div class="content">
@@ -118,10 +164,62 @@
         </div>
       </div>
 
+      <div class="my-section" id="research-graphs">
+        <h1>User Research Findings</h1>
+        <div class="graph-row">
+          <img src="../images/fact-1.png" />
+          <img src="../images/fact-2.png" />
+          <img src="../images/fact-3.png" />
+        </div>
+      </div>
+
+      <div class="my-section single-column" id="personas">
+        <div class="leftjust title-headline-p">
+          <h4 class="title">Competitive Analysis</h4>
+          <h2>Finding my way in the marketplace</h2>
+          <p>I first compiled an exhaustive review of existing mobile apps.  I found that each had their own strengths, but none of them had the key combination that I was fundamental to Bróg’s unique offering, namely (1) a sole focus on pronunciation, (2) real feedback from other users, (3) a daily task-based usage model.
+          </p>
+        </div>
+        <div class="my-section">
+          <div class="one-third">
+            <h2>SIMON</h2>
+            <p>Student, 19</p>
+            <img src="../images/simon.png" />
+            <h3>Goals</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Frustrations</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Motivations</h3>
+            <p>Improve presentation skills.</p>
+          </div>
+          <div class="one-third">
+            <h2>GLORIA</h2>
+            <p>Photographer, 23</p>
+            <img src="../images/gloria.png" />
+            <h3>Goals</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Frustrations</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Motivations</h3>
+            <p>Improve presentation skills.</p>
+          </div>
+          <div class="one-third">
+            <h2>STEPHEN</h2>
+            <p>Accountant, 31</p>
+            <img src="../images/stephen.png" />
+            <h3>Goals</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Frustrations</h3>
+            <p>Improve presentation skills.</p>
+            <h3>Motivations</h3>
+            <p>Improve presentation skills.</p>
+          </div>
+        </div>
+      </div>
 
     </section>
 
-
+<!-------------------------------------------------------------------------------->
 <!--UX DESIGN SECTION -->
     <section>
       <div class="my-section chapter-heading" id="ux-design">
@@ -149,10 +247,34 @@
         </div>
       </div>
 
+      <div class="choice my-section single-column">
+        <div class="container">
+          <h1>CHOICE!</h1>
+          <p>
+            I really needed users to see how easy it was to complete key actions so they would use the app daily.  I was concerned with users creating an account but never posting their first video.
+            <br  /> <br />
+            Based on the concept of <span>Instant Gratification</span> from Jennifer Tidwell’s book, <em>Designing Interfaces</em>,  I decided that within the flow of account creation I would embed the process of recording and posting your first pronunciation video.
+          </p>
+        </div>
+      </div>
+
+      <div class="my-section single-column" id="user-flows">
+        <div class="leftjust title-headline-p">
+          <h4 class="title">User Flows</h4>
+          <h2>Carving Out Roadways</h2>
+          <p>Putting on my UX Design hat, I then developed User Flows as a first step toward converting a user story into the framework for a mobile application.
+          <br  /><br  />
+          Below is an example of the account creation user flow, which includes the process of recording/publishing the user’s first video submission.  See, it’s not so hard!
+          </p>
+        </div>
+        <img src="../images/userflow2.png" />
+      </div>
+
     </section>
 
 <!--UI DESIGN SECTION -->
     <section>
+
       <div class="my-section chapter-heading" id="ui-design">
         <div class="bg-image">
           <div class="overlay">
@@ -160,6 +282,68 @@
           </div>
         </div>
       </div>
+
+      <div class="my-section single-column" id="Wireframes">
+        <div class="leftjust title-headline-p skinny">
+          <h4 class="title">Wireframes</h4>
+          <h2>The house has good bones</h2>
+          <p>Via surveys and in-person interviews I began to explore the specific challenges and needs of potentials users. Synthesizing the expansive user research, I summarized findings into insightful, archetypal User Personas in order to create a target user base.
+          </p>
+        </div>
+        <img src="../images/userflow.png" />
+      </div>
+
+      <div class="my-section gray1" id="user-testing-1">
+        <div class="one-half left-half title-headline-p">
+          <div class="content">
+            <h4 class="title">User Testing</h4>
+            <h2>Testing lo-fi wireframes</h2>
+            <p>After creating lo-fi wireframes, I put together interactive prototypes of some essential workflows and arranged usability tests.  I recorded my findings an analyzed the results.
+            </p>
+          </div>
+        </div>
+        <div class="one-half right-half example-image">
+          <div class="content">
+            <img src="../images/user-testing-analysis.png"/>
+            <a href="https://www.google.com">View Full Analysis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="choice my-section single-column">
+        <div class="container">
+          <h1>CHOICE!</h1>
+          <p>
+          Quickly into testing I realized that my "front-loaded" account creation process was a bit heavy-handed.  Users were overwhelmed with having to do too much, too soon.  So I scaled this back a bit, finding a happy medium whereby users were encouraged, but not required, to create/post a video during account creation.
+          </p>
+        </div>
+      </div>
+
+      <div class="my-section single-column" id="mockups">
+        <div class="leftjust title-headline-p skinny">
+          <h4 class="title">Mockups</h4>
+          <h2>Fine-tuning the visual design</h2>
+          <p>After establishing the layout from wireframing, I considered the visual design, applying hi-fi design details for the various content elements on the page.  Check out some sample screens below or view the entire file.
+          </p>
+        </div>
+        <div class="flexbox-gallery">
+          <img src="../images/brog-final/sign-up-1.png" />
+          <img src="../images/brog-final/welcome-1.png" />
+          <img src="../images/brog-final/onboarding-1.png" />
+          <img src="../images/brog-final/onboarding-5.png" />
+          <img src="../images/brog-final/firstvideo-2.png" />
+          <img src="../images/brog-final/menu.png" />
+          <img src="../images/brog-final/review-1.png" />
+          <img src="../images/brog-final/review-2.png" />
+          <img src="../images/brog-final/review-3.png" />
+          <img src="../images/brog-final/review-4.png" />
+          <img src="../images/brog-final/review-6.png" />
+          <img src="../images/brog-final/review-7.png" />
+          <img src="../images/brog-final/record-2.png" />
+          <img src="../images/brog-final/settings-5.png" />
+        </div>
+      </div>
+
     </section>
 
 <!-- BRANDING SECTION -->
@@ -176,14 +360,16 @@
         <div class="one-half left-half title-headline-p">
           <div class="content">
             <h4 class="title">Logo</h4>
-            <h2>Finding my way in the marketplace</h2>
-            <p>I first compiled an exhaustive review of existing mobile apps.  I found that each had their own strengths, but none of them had the key combination that I was fundamental to Bróg’s unique offering, namely (1) a sole focus on pronunciation, (2) real feedback from other users, (3) a daily task-based usage model.
+            <h2>Defining a symbol for my brand</h2>
+            <p>In the Branding stage I finalized the aesthetics, making key decisions to select a consistent design library for typefaces, colors, and other key visual elements.
+            For my logo, I used a cross section of the earth as a callback to a “classroom educational poster” feeling.  The concentric circles also resembled radiating sound waves.
+
             </p>
           </div>
         </div>
         <div class="one-half right-half example-image">
           <div class="content">
-            <img src="../images/comp-an.png"/>
+            <img src="../images/logo-specs.png"/>
             <a href="https://www.google.com">View Full Analysis</a>
           </div>
         </div>
@@ -192,15 +378,15 @@
       <div class="my-section" id="color">
         <div class="one-half right-half example-image">
           <div class="content">
-            <img src="../images/survey-image.png"/>
+            <img src="../images/brog_logo.png"/>
             <a href="https://www.google.com">View Full User Survey</a>
           </div>
         </div>
         <div class="one-half left-half title-headline-p">
           <div class="content">
             <h4 class="title">Colors</h4>
-            <h2>Who are my potential users?</h2>
-            <p>Via surveys and in-person interviews I began to explore the specific challenges and needs of potentials users. Synthesizing the expansive user research, I summarized findings into insightful, archetypal User Personas in order to create a target user base.
+            <h2>Choosing the correct palette</h2>
+            <p>Because there were many colors in the logo (and ultimately in the brand itself) I drew inspiration, among other things, from the iconic Mexico 68 olympics artwork, which seemed relevant both for it’s ability to combine many colors and also for what the olympics represents in terms of connecting cultures.
             </p>
           </div>
         </div>
@@ -209,34 +395,41 @@
       <div class="my-section gray1" id="typography">
         <div class="one-half left-half title-headline-p">
           <div class="content">
-            <h4 class="title">Typography      </h4>
-            <h2>Finding my way in the marketplace</h2>
-            <p>I first compiled an exhaustive review of existing mobile apps.  I found that each had their own strengths, but none of them had the key combination that I was fundamental to Bróg’s unique offering, namely (1) a sole focus on pronunciation, (2) real feedback from other users, (3) a daily task-based usage model.
+            <h4 class="title">Typography</h4>
+            <h2>Thinking With Type</h2>
+            <p>For logo and headings I chose Work Sans as a round option with playful elements.  For example: the lowercase t has an asymmetric crossbar and an ornate and rounded terminal, the decorative apostraphe and the loop-tailed lowercase g.  These items gave a playful voice to headings in the app, bringing some fun and whimsy to the user experience. For body and buttons I chose a more straightforward Roboto for simplicity.
+
             </p>
           </div>
         </div>
         <div class="one-half right-half example-image">
           <div class="content">
-            <img src="../images/comp-an.png"/>
+            <img src="../images/type.png"/>
             <a href="https://www.google.com">View Full Analysis</a>
           </div>
         </div>
       </div>
 
-      <div class="my-section" id="preference-testing">
-        <div class="one-half right-half example-image">
-          <div class="content">
-            <img src="../images/survey-image.png"/>
-            <a href="https://www.google.com">View Full User Survey</a>
-          </div>
-        </div>
-        <div class="one-half left-half title-headline-p">
-          <div class="content">
-            <h4 class="title">Hi-fi user testing</h4>
-            <h2>Who are my potential users?</h2>
-            <p>Via surveys and in-person interviews I began to explore the specific challenges and needs of potentials users. Synthesizing the expansive user research, I summarized findings into insightful, archetypal User Personas in order to create a target user base.
-            </p>
-          </div>
+      <div class="choice my-section single-column">
+        <div class="container">
+          <h1>CHOICE!</h1>
+          <p>
+            After elaborate designing and test, I’m confident that this design is prepared to graduate to the Development phase.  I arrived at some key insights during the the design process of the Bróg application:</p>
+          <ul>
+            <br />
+            <li>
+            My initial suspicions about the necessity of this product were solidified with initial users interviews.  There were no surprises at this stage, and the results further solidified our confidence that there was a gap to be bridged in the market.
+            </li>
+            <li>
+            My first mockups used some slightly more experimental account creation flows, which included a more elaborate engagement process before even provide key user details.  After user testing I scaled this back to still provide some quick wins but err on the side of convention.
+            </li>
+            <li>
+            In an app that carves out a specific niche, it’s more important than usual to clarify multiple times the fundamental concept of the app.  In this case, it’s vital for users to realize that this is NOT an app that will generally teach you to a language a la DuoLingo or something like Rosetta Stone.
+            </li>
+            <li>
+            If given more time, it would be great to further develop the user-generated content elements of the app.
+            </li>
+          </ul>
         </div>
       </div>
 
