@@ -23,6 +23,15 @@ Orange #FF9E61
   color: #3C3A36;
 }
 
+
+html {
+    width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
 p {
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -223,7 +232,6 @@ nav ul.burger {
 
 .choice .container {
   margin: 0 auto;
-  max-width: 600px;
 }
 
 .choice h1{
@@ -282,7 +290,7 @@ box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
 div.one-half {
   width: 50%;
   padding: 60px 3rem;
-  min-width: 500px;
+  min-width: 480px;
 }
 
 div.one-third {
@@ -291,7 +299,7 @@ div.one-third {
   flex-direction: column;
   align-items: center;
   padding: 60px 3rem;
-  min-width: 200px;
+    min-width: 200px;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -524,3 +532,129 @@ div.chapter-heading {
 #personas .one-third p{
   font-size: 1rem;
 }
+
+/*-----------------------------------------------------------------------------*/
+/* MEDIA QUERIES
+/*-----------------------------------------------------------------------------*/
+
+/* Anything under 480 */
+
+@media (max-width:480px)  {
+  html {
+    font-size: 8px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul.burger{
+      display: block;
+      color: white;
+      margin-right: 16px;
+    }
+
+    nav ul.burger li i{
+      color: white;
+    }
+
+    nav ul.burger a{
+      font-size: 3rem;
+    }
+
+    .second-header {
+      display: none;
+    }
+
+  .hero img {
+    height: 20vh;
+  }
+
+  .single-column {
+    padding: 0;
+  }
+
+  div.single-column.centered {
+    padding: 4rem;
+  }
+
+  div.one-half {
+    width: 100%;
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  div.one-third {
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  .chapter-heading .overlay h1 {
+    font-size: 5rem;
+  }
+
+  div.chapter-heading {
+    height: 15rem;
+  }
+
+  div.chapter-heading .bg-image{
+    padding: 0;
+  }
+
+  #ux-design .bg-image, #ui-design .bg-image, #branding .bg-image{
+      padding: 0;
+    }
+
+  .choice {
+    padding: 3rem;
+  }
+
+  #research-graphs {
+    padding: 4rem 3rem;
+  }
+
+  #research-graphs .graph-row {
+    height: inherit;
+    justify-content: center;
+  }
+
+  #research-graphs .graph-row img {
+    height: 30vh;
+    margin-bottom : 2rem;
+  }
+
+  #research-graphs h1 {
+    margin: 0px auto 4rem;
+}
+
+  .title-headline-p, .title-headline-p.skinny {
+    padding: 4rem 3rem;
+  }
+
+  #personas .one-third {
+    min-width: 200px;
+    width: 80%;
+    margin: 3rem;
+  }
+
+  #personas .my-section {
+    justify-content: center;
+    margin: 4rem 3rem;
+  }
+
+  #user-flows img, #Wireframes img {
+    margin: 3rem;
+  }
+
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*
+@media (max-width:480px)  {  smartphones, iPhone, portrait 480x320 phones  }
+@media (max-width:640px)  {  portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
+@media (max-width:960px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
+@media (max-width:1280px) {  big landscape tablets, laptops, and desktops  }
+@media (everything else will be) {  hi-res laptops and desktops  }
+*/
