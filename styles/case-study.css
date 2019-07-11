@@ -226,12 +226,12 @@ nav ul.burger {
 
 .choice {
   background-color: #3C3A36;
-  padding: 60px 20px;
-
+  padding: 4rem 3rem;
 }
 
 .choice .container {
   margin: 0 auto;
+  max-width: 768px;
 }
 
 .choice h1{
@@ -241,9 +241,21 @@ nav ul.burger {
   margin-bottom: 10px;
 }
 
-.choice p, .choice li {
+.choice p {
   color: #F6F5F3;
 }
+
+.choice ul {
+  margin-left: 2rem;
+}
+
+.choice li {
+  color: #F6F5F3;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
 
 .choice span {
   color: #FF9E61;
@@ -366,6 +378,7 @@ div.one-half.title-headline-p .content, div.one-half.example-image .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 div.one-half.example-image .content {
@@ -537,9 +550,11 @@ div.chapter-heading {
 /* MEDIA QUERIES
 /*-----------------------------------------------------------------------------*/
 
-/* Anything under 480 */
+/* Anything 375-640 */
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
 
-@media (max-width:480px)  {
+@media (max-width:640px)  {
   html {
     font-size: 8px;
     }
@@ -567,21 +582,32 @@ div.chapter-heading {
     }
 
   .hero img {
-    height: 20vh;
+    height: 40vh;
   }
 
   .single-column {
     padding: 0;
+
   }
 
   div.single-column.centered {
     padding: 4rem;
+    max-width: 480px;
   }
 
   div.one-half {
     width: 100%;
     min-width: 0;
     padding: 4rem 3rem;
+  }
+
+  div.one-half.title-headline-p {
+    padding: 4rem 3rem 0rem 3rem;
+  }
+
+  div.one-half .content {
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   div.one-third {
@@ -594,7 +620,7 @@ div.chapter-heading {
   }
 
   div.chapter-heading {
-    height: 15rem;
+    height: 30rem;
   }
 
   div.chapter-heading .bg-image{
@@ -609,8 +635,13 @@ div.chapter-heading {
     padding: 3rem;
   }
 
+  .choice .container{
+    max-width: 480px;
+  }
+
   #research-graphs {
     padding: 4rem 3rem;
+
   }
 
   #research-graphs .graph-row {
@@ -619,8 +650,9 @@ div.chapter-heading {
   }
 
   #research-graphs .graph-row img {
-    height: 30vh;
+    height: 40vh;
     margin-bottom : 2rem;
+    padding: 0 60px;
   }
 
   #research-graphs h1 {
@@ -629,11 +661,13 @@ div.chapter-heading {
 
   .title-headline-p, .title-headline-p.skinny {
     padding: 4rem 3rem;
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   #personas .one-third {
     min-width: 200px;
-    width: 80%;
+    width: 60%;
     margin: 3rem;
   }
 
@@ -644,6 +678,154 @@ div.chapter-heading {
 
   #user-flows img, #Wireframes img {
     margin: 3rem;
+  }
+
+  div.single-column .flexbox-gallery {
+    margin-top: 0;
+  }
+
+  #color, #user-research {
+    flex-wrap: wrap-reverse;
+  }
+
+}
+
+/* Anything 641 - 960 */
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+@media (max-width:960px)  {
+  html {
+    font-size: 12px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul.burger{
+      display: block;
+      color: white;
+      margin-right: 16px;
+    }
+
+    nav ul.burger li i{
+      color: white;
+    }
+
+    nav ul.burger a{
+      font-size: 3rem;
+    }
+
+    .second-header {
+      display: none;
+    }
+
+  .hero img {
+    height: 60vh;
+  }
+
+  .single-column {
+    padding: 0;
+
+  }
+
+  div.single-column.centered {
+    padding: 4rem;
+    max-width: 640px;
+  }
+
+  div.one-half {
+    width: 100%;
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  div.one-half.title-headline-p {
+    padding: 4rem 3rem 0rem 3rem;
+  }
+
+  div.one-half .content {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  div.one-third {
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  .chapter-heading .overlay h1 {
+    font-size: 7rem;
+  }
+
+  div.chapter-heading {
+    height: 30rem;
+  }
+
+  div.chapter-heading .bg-image{
+    padding: 0;
+  }
+
+  #ux-design .bg-image, #ui-design .bg-image, #branding .bg-image{
+      padding: 0;
+    }
+
+  .choice {
+    padding: 4rem 3rem;
+  }
+
+  .choice .container{
+    max-width: 500px;
+  }
+
+  #research-graphs {
+    padding: 4rem 3rem;
+
+  }
+
+  #research-graphs .graph-row {
+    height: inherit;
+    justify-content: center;
+  }
+
+  #research-graphs .graph-row img {
+    height: 40vh;
+    margin-bottom : 2rem;
+    padding: 0 20px;
+  }
+
+  #research-graphs h1 {
+    margin: 0px auto 4rem;
+}
+
+  .title-headline-p, .title-headline-p.skinny {
+    padding: 4rem 3rem 0rem 3rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  #personas .one-third {
+    min-width: 200px;
+    width: 26%;
+    margin: 2rem;
+  }
+
+  #personas .my-section {
+    justify-content: center;
+    margin: 4rem 3rem;
+  }
+
+  #user-flows img, #Wireframes img {
+    margin: 3rem;
+  }
+
+  div.single-column .flexbox-gallery {
+    margin-top: 3rem;
+  }
+
+  #color, #user-research {
+    flex-wrap: wrap-reverse;
   }
 
 }
