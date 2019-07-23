@@ -1,3 +1,18 @@
+/*
+Gray 1 #F6F5F3
+Gray 2 #E4E3E2
+Gray 3 #D5D4D1
+Gray 4 #9E9B94
+Gray 5 #6E6A63
+Gray 6 #3C3A36
+
+Red #FF5B56
+
+Yellow #F3CF58
+
+Orange #FF9E61
+*/
+
 /* DEFAULTS */
 * {
   box-sizing: border-box;
@@ -10,7 +25,7 @@ h1, h2, h2, h3, h4, h5, p, a {
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  color: #393939;
+  color: #3C3A36;
 }
 
 h1 {
@@ -49,7 +64,6 @@ button {
   border-radius: 6px;
   color: white;
   background-color: #F35858;
-
 }
 
 /* NAVBAR */
@@ -69,7 +83,7 @@ header {
 
 .white{
   /*background-color: hsla(0, 0%, 22%, 1);*/
-  background-color: #3c3931;
+  background-color: #3C3A36;
   position: fixed;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
   -moz-box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
@@ -200,7 +214,7 @@ nav ul.burger {
 .hero {
   width: 100%;
   height: 95vh;
-  background-color: black;
+  background-color: #3C3A36;
   background-image: url(../images/lucas-bg-wide.png);
   background-position: right;
   background-size: cover;
@@ -209,8 +223,8 @@ nav ul.burger {
 .hero .overlay {
   width: 100%;
   height: 100%;
-  background: rgb(57,57,57);
-  background: linear-gradient(69deg, rgba(57,57,57,1) 0%, rgba(57,57,57,0.9808298319327731) 28%, rgba(57,57,57,0.7567401960784313) 100%);
+  background: rgb(60,58,54);
+  background: linear-gradient(69deg, rgba(60,58,54,1) 0%, rgba(60,58,54,0.9808298319327731) 28%, rgba(60,58,54,0.7567401960784313) 100%);
   margin: 0 auto;
 }
 
@@ -450,7 +464,7 @@ section.projects {
 .footer {
   height: 80px;
   display: block;
-  background-color: #393939;
+  background-color: #3C3A36;
 }
 
 .footer .container {

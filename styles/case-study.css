@@ -321,19 +321,36 @@ div.one-third {
   margin: 1rem 0 2rem 0;
 }
 
-button.ghost {
+a.ghost {
+  padding: 8px;
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  height: 60px;
   border-radius: 6px;
   color: #FF5B56;
   border: 1px solid #FF5B56;
   background: none;
   padding: 12px 20px;
+  text-decoration: none;
+}
+
+a.ghost:hover {
+  padding: 8px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  border-radius: 6px;
+  color: #FF5B56;
+  border: 1px solid #FF5B56;
+  background: none;
+  padding: 12px 20px;
+  text-decoration: none;
 }
 
 
@@ -544,6 +561,64 @@ div.chapter-heading {
 
 #personas .one-third p{
   font-size: 1rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* FOOTER
+/*-----------------------------------------------------------------------------*/
+
+.footer {
+  background-color: #3C3A36;
+  border-top: 1px solid #6E6A63;
+}
+
+.footer .container {
+  width: 90%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer .half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 359px;
+  margin: 16px auto;
+}
+
+
+.footer .half.social div{
+  height: 100%;
+}
+
+.footer .details div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer .details div p {
+  color: #f5f5f5;
+  font-weight: 200;
+  line-height: 1.25rem;
+}
+
+.footer .details img {
+  height: 60px;
+  margin-right: 16px;
+}
+
+.footer .social .icons i{
+  font-size: 2.25rem;
+  color: white;
+  line-height: 100%;
+  padding: 0 20px;
 }
 
 /*-----------------------------------------------------------------------------*/
