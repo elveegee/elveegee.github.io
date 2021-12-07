@@ -1,0 +1,917 @@
+/*
+Gray 1 #F6F5F3
+Gray 2 #E4E3E2
+Gray 3 #D5D4D1
+Gray 4 #9E9B94
+Gray 5 #6E6A63
+Gray 6 #3C3A36
+
+Red #FF5B56
+
+Yellow #F3CF58
+
+Orange #FF9E61
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #3C3A36;
+}
+
+
+html {
+    width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  height: 60px;
+  border-radius: 6px;
+  color: #F6F5F3;
+  background-color: #F35858;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+/* My two headers (top and navbar) */
+
+header {
+  height: 80px;
+  background-color: #3C3A36;
+}
+
+.main-header .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-header .container img {
+  height: 90%;
+  padding: 10px 0px 4px 0px;
+}
+
+.second-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second-header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.second-header ul li {
+  color: #F6F5F3;
+  list-style: none;
+  width: 20%;
+  margin: auto 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-header ul li a {
+  color: #F6F5F3;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.second-header ul li a:hover {
+  color: #F3CF58;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Nav links within the main header */
+
+nav {
+  float: right;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 60px;
+  padding: 30px 0;
+  position: relative;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+nav a:hover{
+  color: #DC6464;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 3px;
+  width:  0%;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav ul.burger {
+  display: none;
+  margin-right: 30px;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* This is the hero section (between the two nav bars vertically, with the images of the phones.) */
+
+.hero {
+  width: 100%;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0 20px 0;
+}
+
+.hero img{
+  margin: 0 auto;
+  display: block;
+  height: 70vh;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* This is just the frame for my "chunk of content" divs.  This first one is for when I have flex rows that wrap (so multiple columsn) */
+
+.my-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*This one is for single-column chunks.*/
+
+.single-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.single-column img {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.gray1 {
+  background-color: #F6F5F3;
+}
+
+.choice {
+  background-color: #3C3A36;
+  padding: 4rem 3rem;
+}
+
+.choice .container {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.choice h1{
+  color: #F3CF58;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.choice p {
+  color: #F6F5F3;
+}
+
+.choice ul {
+  margin-left: 2rem;
+}
+
+.choice li {
+  color: #F6F5F3;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+
+
+.choice span {
+  color: #FF9E61;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Breaking content chunks into 1, 2 or 3 columns */
+
+div.single-column.centered {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+  padding: 60px;
+}
+
+div.single-column.leftjust {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 860px;
+  padding: 60px;
+}
+
+div.single-column .flexbox-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 32px;
+}
+
+div.single-column .flexbox-gallery img{
+  width: 180px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
+-moz-box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
+box-shadow: 0px 9px 10px -6px rgba(110,106,99,0.68);
+}
+
+div.one-half {
+  width: 50%;
+  padding: 60px 3rem;
+  min-width: 480px;
+}
+
+div.one-third {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 3rem;
+    min-width: 200px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* This is the centered single column BROG title object. */
+
+#summary p {
+  margin: 1rem 0 2rem 0;
+}
+
+a.ghost {
+  padding: 8px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  border-radius: 6px;
+  color: #FF5B56;
+  border: 1px solid #FF5B56;
+  background: none;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+a.ghost:hover {
+  padding: 8px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  border-radius: 6px;
+  color: #FF5B56;
+  border: 1px solid #FF5B56;
+  background: none;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* This is the template for the ONE-HALF object that has text/headline/paragraph on one half and image on other. */
+
+.title-headline-p{
+  padding: 20px 0;
+  max-width: 960px;
+}
+
+.title-headline-p.skinny{
+  padding: 20px 0;
+  max-width: 768px;
+}
+
+.title-headline-p h4{
+  color: #6E6A63;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title-headline-p h2{
+  color: #3C3A36;
+  line-height: 2.6rem;
+  margin-bottom: 18px;
+}
+
+.title-headline-p p{
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.example-image img{
+  width: 100%;
+}
+
+div.one-half.title-headline-p .content, div.one-half.example-image .content {
+  border: ;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+div.one-half.example-image .content {
+  align-items: center;
+}
+
+div.one-half.example-image a {
+  color: #FF5B56;
+  text-transform: uppercase;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* These CHAPTER HEADINGS are when I break out the sections (Research, UX Design, UI Design, etc) */
+
+div.chapter-heading {
+  height: 500px;
+  width: 100%;
+}
+
+.chapter-heading .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/research-bg.png);
+  background-size: auto;
+}
+
+.chapter-heading .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsla( 40, 15%, 96%, 0.8);
+  border: 14px solid #F3CF58;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-heading .overlay h1 {
+  color: #6E6A63;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: -.05rem;
+}
+
+#ux-design .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/research-bg.png);
+  background-size: cover;
+}
+
+#ui-design .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/ui-design-bg.png);
+  background-size: cover;
+}
+
+#branding .bg-image {
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  background-image: url(../images/branding-bg.png);
+  background-size: cover;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the Challenge/Solution chunk in the intro. */
+
+#challenge .right-half {
+  background-color: hsla(40, 14%, 92%, 1);
+}
+
+#challenge .title {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #F35858;
+  margin-bottom: .5rem;
+}
+
+#challenge .right-half .title {
+  color: #FF9E61;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the Roles/Deliverables/Tools chunk in the intro. */
+
+#roles h3 {
+  font-weight: 600;
+  color: #3C3A36;
+  letter-spacing: -.05rem;
+}
+
+#roles ul {
+  padding: 1.2rem;
+}
+
+#roles li {
+  list-style: none;
+  text-align: center;
+  padding: .75rem;
+  color: #3C3A36;
+  font-size: 1.25rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the RESEARCH GRAPHS chunk in the intro. */
+
+#research-graphs {
+  background-color: #6E6A63;
+  padding: 60px 0 0 0;
+}
+
+#research-graphs h1{
+  color: #F6F5F3;
+  margin: 0px auto 60px;
+
+}
+
+#research-graphs .graph-row {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#research-graphs .graph-row img{
+  height: 80%;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* Specific to the PEROSONAS chunk in the UX Research area. */
+
+
+#personas .my-section {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#personas img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#personas h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+#personas .one-third {
+  align-items: flex-start;
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+#personas .one-third p{
+  font-size: 1rem;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* FOOTER
+/*-----------------------------------------------------------------------------*/
+
+.footer {
+  background-color: #3C3A36;
+  border-top: 1px solid #6E6A63;
+}
+
+.footer .container {
+  width: 90%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer .half {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 359px;
+  margin: 16px auto;
+}
+
+
+.footer .half.social div{
+  height: 100%;
+}
+
+.footer .details div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer .details div p {
+  color: #f5f5f5;
+  font-weight: 200;
+  line-height: 1.25rem;
+}
+
+.footer .details img {
+  height: 60px;
+  margin-right: 16px;
+}
+
+.footer .social .icons i{
+  font-size: 2.25rem;
+  color: white;
+  line-height: 100%;
+  padding: 0 20px;
+}
+
+/*-----------------------------------------------------------------------------*/
+/* MEDIA QUERIES
+/*-----------------------------------------------------------------------------*/
+
+/* Anything 375-640 */
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+@media (max-width:640px)  {
+  html {
+    font-size: 8px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul.burger{
+      display: block;
+      color: white;
+      margin-right: 16px;
+    }
+
+    nav ul.burger li i{
+      color: white;
+    }
+
+    nav ul.burger a{
+      font-size: 3rem;
+    }
+
+    .second-header {
+      display: none;
+    }
+
+  .hero img {
+    height: 40vh;
+  }
+
+  .single-column {
+    padding: 0;
+
+  }
+
+  div.single-column.centered {
+    padding: 4rem;
+    max-width: 480px;
+  }
+
+  div.one-half {
+    width: 100%;
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  div.one-half.title-headline-p {
+    padding: 4rem 3rem 0rem 3rem;
+  }
+
+  div.one-half .content {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  div.one-third {
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  .chapter-heading .overlay h1 {
+    font-size: 5rem;
+  }
+
+  div.chapter-heading {
+    height: 30rem;
+  }
+
+  div.chapter-heading .bg-image{
+    padding: 0;
+  }
+
+  #ux-design .bg-image, #ui-design .bg-image, #branding .bg-image{
+      padding: 0;
+    }
+
+  .choice {
+    padding: 3rem;
+  }
+
+  .choice .container{
+    max-width: 480px;
+  }
+
+  #research-graphs {
+    padding: 4rem 3rem;
+
+  }
+
+  #research-graphs .graph-row {
+    height: inherit;
+    justify-content: center;
+  }
+
+  #research-graphs .graph-row img {
+    height: 40vh;
+    margin-bottom : 2rem;
+    padding: 0 60px;
+  }
+
+  #research-graphs h1 {
+    margin: 0px auto 4rem;
+}
+
+  .title-headline-p, .title-headline-p.skinny {
+    padding: 4rem 3rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  #personas .one-third {
+    min-width: 200px;
+    width: 60%;
+    margin: 3rem;
+  }
+
+  #personas .my-section {
+    justify-content: center;
+    margin: 4rem 3rem;
+  }
+
+  #user-flows img, #Wireframes img {
+    margin: 3rem;
+  }
+
+  div.single-column .flexbox-gallery {
+    margin-top: 0;
+  }
+
+  #color, #user-research {
+    flex-wrap: wrap-reverse;
+  }
+
+}
+
+/* Anything 641 - 960 */
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+@media (max-width:960px)  {
+  html {
+    font-size: 12px;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul.burger{
+      display: block;
+      color: white;
+      margin-right: 16px;
+    }
+
+    nav ul.burger li i{
+      color: white;
+    }
+
+    nav ul.burger a{
+      font-size: 3rem;
+    }
+
+    .second-header {
+      display: none;
+    }
+
+  .hero img {
+    height: 60vh;
+  }
+
+  .single-column {
+    padding: 0;
+
+  }
+
+  div.single-column.centered {
+    padding: 4rem;
+    max-width: 640px;
+  }
+
+  div.one-half {
+    width: 100%;
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  div.one-half.title-headline-p {
+    padding: 4rem 3rem 0rem 3rem;
+  }
+
+  div.one-half .content {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  div.one-third {
+    min-width: 0;
+    padding: 4rem 3rem;
+  }
+
+  .chapter-heading .overlay h1 {
+    font-size: 7rem;
+  }
+
+  div.chapter-heading {
+    height: 30rem;
+  }
+
+  div.chapter-heading .bg-image{
+    padding: 0;
+  }
+
+  #ux-design .bg-image, #ui-design .bg-image, #branding .bg-image{
+      padding: 0;
+    }
+
+  .choice {
+    padding: 4rem 3rem;
+  }
+
+  .choice .container{
+    max-width: 500px;
+  }
+
+  #research-graphs {
+    padding: 4rem 3rem;
+
+  }
+
+  #research-graphs .graph-row {
+    height: inherit;
+    justify-content: center;
+  }
+
+  #research-graphs .graph-row img {
+    height: 40vh;
+    margin-bottom : 2rem;
+    padding: 0 20px;
+  }
+
+  #research-graphs h1 {
+    margin: 0px auto 4rem;
+}
+
+  .title-headline-p, .title-headline-p.skinny {
+    padding: 4rem 3rem 0rem 3rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  #personas .one-third {
+    min-width: 200px;
+    width: 26%;
+    margin: 2rem;
+  }
+
+  #personas .my-section {
+    justify-content: center;
+    margin: 4rem 3rem;
+  }
+
+  #user-flows img, #Wireframes img {
+    margin: 3rem;
+  }
+
+  div.single-column .flexbox-gallery {
+    margin-top: 3rem;
+  }
+
+  #color, #user-research {
+    flex-wrap: wrap-reverse;
+  }
+
+}
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*
+@media (max-width:480px)  {  smartphones, iPhone, portrait 480x320 phones  }
+@media (max-width:640px)  {  portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
+@media (max-width:960px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
+@media (max-width:1280px) {  big landscape tablets, laptops, and desktops  }
+@media (everything else will be) {  hi-res laptops and desktops  }
+*/
