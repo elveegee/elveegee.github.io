@@ -53,14 +53,15 @@ p.tag {
   font-size: 1rem;
 }
 
-button {
+.button {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  height: 60px;
   border-radius: 6px;
   color: white;
   background-color: #F35858;
@@ -305,48 +306,51 @@ section.projects {
 }
 
 .project {
-  border:;
+  display: flex;
+  flex-direction: row;
   height:480px;
   margin: 100px auto;
   border-radius: 8px;
-  background-color: white;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   max-width: 1400px;
 }
 
 .project .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
   width: 35%;
-  height: 100%;
-  /*background-color:hsla(34, 32%, 90%, .2);*/
-  background-color:hsla(34, 5%, 90%, .2);
-  padding-top: 50px;
+  background-color:#FBFAF8;
   border-right: 1px solid #d3d3d3;
-  float: left;
+}
+
+.project .left .button {
+  width: 100%;
+  border: none;
 }
 
 .project .right {
   width: 65%;
   height: 100%;
+  padding: 1rem 0 .5rem;
   background-color: hsla(34, 15%, 90%, .2);
-  padding-top: 50px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: ;
   float: right;
   overflow: hidden;
   position: relative;
 }
 
-.project .left .container {
-  background-color: ;
-  height: 90%;
-  width: 80%;
-  position: relative;
-}
-
 .project .right .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: ;
-  height: 90%;
+  height: 100%;
   width: 90%;
   position: relative;
   text-align: center;
@@ -357,14 +361,7 @@ section.projects {
   margin: 0 0 10px 0;
 }
 
-.project .left button {
-  bottom: 20px;
-  position: absolute;
-  left: 50%;
-  width: 80%;
-  webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
+
 
 .project p.tag {
   font-size: 1rem;
@@ -420,9 +417,37 @@ section.projects {
 .project .right .phone2 {
   height: 100%;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
+  /*-webkit-box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
   -moz-box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
   box-shadow: 0px 3px 7px 0px rgba(105,105,105,1);
+  */
+}
+
+#fs-project .right {
+  padding: 4rem;
+}
+
+#fs-project .right .container{
+  padding: 2rem;
+  background-color: hsla(0,0%,0%,.5);
+}
+
+#fs-project .right .container div{
+  padding: 2rem;
+  width: 100%;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#fs-project .right .container div h3 {
+  color: white;
+}
+
+#fs-project .button {
+  background-color: #17A1DB;
+
 }
 
 /* CONTACT SECTION */
