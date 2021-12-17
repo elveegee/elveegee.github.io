@@ -193,6 +193,7 @@ nav ul.burger {
   margin: 0 auto;
   display: block;
   height: 70vh;
+  max-height: 400px;
 }
 
 
@@ -241,8 +242,12 @@ nav ul.burger {
   margin-bottom: 10px;
 }
 
-.choice p {
+.choice p, .choice em {
   color: #F6F5F3;
+}
+
+em {
+  font-style: italic;
 }
 
 .choice ul {
@@ -402,9 +407,16 @@ div.one-half.example-image .content {
   align-items: center;
 }
 
-div.one-half.example-image a {
+.my-section a {
   color: #FF5B56;
   text-transform: uppercase;
+}
+
+#personas a {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 /*-----------------------------------------------------------------------------*/
