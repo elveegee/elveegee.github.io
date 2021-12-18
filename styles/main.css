@@ -747,6 +747,9 @@ section.projects {
   }
   .overlay .container {
     top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .hero {
@@ -760,21 +763,24 @@ section.projects {
   .hero h1 {
     font-size: 1.5rem;
     top: 50%;
-    padding: 2rem 0;
+    padding: 1rem 0 0;
   }
 
   .hero h3 {
     font-size: 1rem;
-    clear: both;
-    padding-top: 20%;
+    margin-top: 20px;
+    padding-top: 4rem;
   }
 
   .hero .arrow {
     padding-top: 1rem;
   }
 
+.project {
+  height: auto;
+}
   .project .right {
-    width: 0%;
+    display: none;
   }
 
   .project .left {
