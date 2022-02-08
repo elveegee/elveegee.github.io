@@ -214,8 +214,8 @@ nav ul.burger {
 
 .hero {
   width: 100%;
-  height: 90vh;
-  background-color: #3C3A36;
+  height: 99vh;
+  background-color: hsla(40,5%,22%,1);
   background-image: url(../images/lucas-bg-wide.png);
   background-position: right;
   background-size: cover;
@@ -225,7 +225,7 @@ nav ul.burger {
   width: 100%;
   height: 100%;
   background: rgb(60,58,54);
-  background: linear-gradient(69deg, rgba(60,58,54,1) 0%, rgba(60,58,54,0.9808298319327731) 28%, rgba(60,58,54,0.7567401960784313) 100%);
+  background: linear-gradient(69deg, hsla(40,5%,20%,1) 0%, hsla(40,5%,20%,0.9808298319327731) 28%, hsla(40,5%,20%,.8) 100%);
   margin: 0 auto;
 }
 
@@ -293,7 +293,7 @@ nav ul.burger {
 
 .hero .arrow {
   width: 60px;
-  display: block;
+  display: none;
   margin: 8rem auto 0;
 
   position: static;

@@ -1,0 +1,264 @@
+/*
+Gray 1 #F6F5F3
+Gray 2 #E4E3E2
+Gray 3 #D5D4D1
+Gray 4 #9E9B94
+Gray 5 #6E6A63
+Gray 6 #3C3A36
+
+Red #FF5B56
+
+Yellow #F3CF58
+
+Orange #FF9E61
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #3C3A36;
+}
+
+
+html {
+    width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+/*
+--------------------------------------------------------------------------------
+Containers
+--------------------------------------------------------------------------------
+*/
+
+.light {
+  background-color: hsla(0, 0%, 98%, 1);
+}
+.dark {
+  background-color: hsla(0, 0%, 80%, 1);
+}
+
+.full-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 7.5rem;
+}
+
+.content-frame {
+  width: 100%;
+  display: flex;
+  max-width: 1280px;
+}
+
+/*
+--------------------------------------------------------------------------------
+Step Card
+--------------------------------------------------------------------------------
+*/
+
+.step-card {
+  border-radius: .5rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+.step-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.step-card.full {
+  flex-direction: column;
+}
+
+.full img, .full .text-div {
+  max-width: 800px;
+}
+
+.step-card div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-div {
+  padding-right: 1rem;
+}
+
+.reverse .text-div {
+  padding-right: 0rem;
+  padding-left: 1rem;
+}
+
+
+.img-div {
+  padding-left: 1rem;
+}
+
+.reverse .img-div {
+  padding-left: 0rem;
+  padding-right: 1rem;
+}
+
+.step-card .text-div {
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.text-div .card-headings {
+  margin-bottom: 1rem;
+}
+
+.text-div h4.card-category {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500px;
+  margin-bottom: .25rem;
+}
+
+.text-div h2.card-headline {
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  letter-spacing: -1px;
+}
+
+.text-div p.card-description {
+  font-weight: 300;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.step-card .img-div {
+  align-items: center;
+}
+
+.step-card .img-div img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.img-div p.view-more {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+
+@media (max-width:1280px)  {
+  /*
+  --------------------------------------------------------------------------------
+  All Content Blocks
+  --------------------------------------------------------------------------------
+  */
+  .full-page-container {
+    padding: 4rem 7.5rem;
+  }
+
+  /*  --------------------------------------------------------------------------------
+  STEP CARD
+  */
+
+
+
+}
+
+@media (max-width:1024px)  {
+  /*
+  --------------------------------------------------------------------------------
+  All Content Blocks
+  --------------------------------------------------------------------------------
+  */
+  .full-page-container {
+    padding: 3rem 3rem;
+  }
+
+
+  /*  --------------------------------------------------------------------------------
+  STEP CARD
+  */
+.step-card {
+  align-items: flex-start;
+}
+
+
+}
+
+@media (max-width:768px)  {
+  /*
+  --------------------------------------------------------------------------------
+  All Content Blocks
+  --------------------------------------------------------------------------------
+  */
+  .full-page-container {
+    padding: 3rem 3rem;
+  }
+
+  /*  --------------------------------------------------------------------------------
+  STEP CARD
+  */
+  .step-card, .step-card.reverse {
+    flex-direction: column;
+  }
+
+  .text-div, .reverse .text-div {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .img-div, .reverse .img-div {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .step-card .img-div img {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+
+}
+
+@media (max-width:480px){
+  /*
+  --------------------------------------------------------------------------------
+  All Content Blocks
+  --------------------------------------------------------------------------------
+  */
+  .full-page-container {
+    padding: 2rem 1rem;
+  }
+
+  /*  --------------------------------------------------------------------------------
+  STEP CARD
+  */
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+/*
+@media (max-width:480px)  {  smartphones, iPhone, portrait 480x320 phones  }
+
+@media (max-width:640px)  {  portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
+@media (max-width:960px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }
+@media (max-width:1280px) {  big landscape tablets, laptops, and desktops  }
+@media (everything else will be) {  hi-res laptops and desktops  }
+*/
