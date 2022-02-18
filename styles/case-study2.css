@@ -34,23 +34,100 @@ body {
 
 /*
 --------------------------------------------------------------------------------
-Containers
+COLORS UNIQUE TO THIS CASE STUDY
 --------------------------------------------------------------------------------
 */
+
+.content-frame h4 {
+  color: hsla(197,80%,48%,1);
+}
 
 /*
 --------------------------------------------------------------------------------
-PROCESS CARD
+Containers
+--------------------------------------------------------------------------------
+*/
+.title-frame {
+  flex-direction: column;
+}
+/*
+--------------------------------------------------------------------------------
+HERO CARD
 --------------------------------------------------------------------------------
 */
 
+.hero-container {
+  background-image: url(../images/fg-case-study/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card div {
+  border: 4px solid hsla(197,80%,48%,1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0px 8px 64px rgba(15, 34, 67, 0.06), 0px 0px 1px rgba(15, 34, 67, 0.08);
+}
+
+.hero-card div img {
+  width: 90%;
+}
+
+/*
+--------------------------------------------------------------------------------
+Title CARD
+--------------------------------------------------------------------------------
+*/
+
+h1, h2{
+  margin-bottom: 1.5rem;
+}
+
+#fs-desc {
+  font-weight: 200;
+}
+
+/*
+--------------------------------------------------------------------------------
+SECTION BREAKER Card
+--------------------------------------------------------------------------------
+*/
+
+.full-page-container.section-marker {
+  height: 600px;
+  background-color: hsla(1,0%,20%,1);
+
+}
+
+.section-marker .content-frame {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 6px;
+}
+
+.section-marker h1 {
+  color: hsla(1,0%,96%,1);
+  margin: 0;
+}
 
 /*
 --------------------------------------------------------------------------------
 Step Card
 --------------------------------------------------------------------------------
 */
-
 .step-card {
   border-radius: .5rem;
   align-items: center;
@@ -66,7 +143,7 @@ Step Card
 }
 
 .full img, .full .text-div {
-  max-width: 800px;
+  max-width: 1000px;
   padding-right: 0rem;
 }
 
@@ -123,6 +200,16 @@ Step Card
   text-decoration-line: underline;
   text-transform: uppercase;
   font-variant: small-caps;
+}
+
+.step-card div.roles-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.roles-tools div {
+  width: 25%;
 }
 
 @media (max-width:1280px)  {
