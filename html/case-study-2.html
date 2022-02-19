@@ -18,16 +18,45 @@
 
     <body>
 
-      <div class="full-page-container hero-container">
+      <header>
+          <a href="../index.html"><img id="smalllogo" class="logo small" src="../images/logo-white.png"/></a>
+          <nav>
+            <ul class="navlinks">
+              <li><a href="#">Work</a></li>
+              <li><a href="bio.html">About</a></li>
+              <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <ul class="burger">
+              <li><a id="burger" onclick="openMenu()" href="#"><i class="fas fa-bars" ></i></a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <div id="hero" class="full-page-container hero-container">
         <div class="content-frame hero-card">
-          <div>
+
             <img src="../images/fg-case-study/three-screen-hero.png">
-          </div>
+            <h1>Panorama Event Comparison Tool</h1>
+
         </div>
       </div>
 
-      <div class="full-page-container dark">
+
+
+      <ul class="dark navbar">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#research">Research & Discovery</a></li>
+        <li><a href="#strategy">Strategy</a></li>
+        <li><a href="#mvps">Lo-Fi MVPs</a></li>
+        <li><a href="#ia">IA</a></li>
+        <li><a href="#ux">UX Design</a></li>
+      </ul>
+
+
+
+      <div id="summary" class="full-page-container dark">
         <div class="content-frame single-column title-frame">
+          <h4>The Project</h4>
           <h2>Strategy, Research, Experience Design for a proposed enhancement to the Panorama web app for increased user engagement</h2>
           <p>I conducted product strategy, user research, user experience design and interface design for a proposed new feature in FrontStream’s Panorama fundraising platform, with the intended outcome to increase frequency and depth of user engagement.
           </p>
@@ -49,9 +78,9 @@
               <h4>Problem</h4>
               <h2>We observed that usage of the product dipped in the middle of the user’s event cycle.</h2>
             </div>
-            <p class="body-text">The team observed that users were active around the time of first publishing their event page, and at the end of the event season, but there was little engagement in 3-6 months in between.  This caused an upstream risk of stagnating revenue growth, low stickiness, and increased risk of churn.
+            <p class="body-text">The Success team observed that users were active around the time of first publishing their event page, and at the end of the event season, but there was little engagement in 3-6 months in between.  This caused an upstream risk of stagnating revenue growth, low stickiness, and increased risk of churn.
 
-How could we improve the product to increase mid-event engagement?
+            How could we improve the product to increase mid-event engagement?
             </p>
           </div>
           <div class="img-div">
@@ -65,9 +94,9 @@ How could we improve the product to increase mid-event engagement?
           <div class="text-div">
             <div class="card-headings">
               <h4>Proposed Solution</h4>
-              <h2>I created an event comparison feature, intended to result in more frequent site visits, higher product IQ, increased satisfaction and deeper engagement with revenue-driving tools.</h2>
+              <h2>I designed an Event Comparison feature, intended to result in more frequent site visits, higher product IQ, increased satisfaction and deeper engagement with revenue-driving tools.</h2>
             </div>
-            <p class="body-text">The event comparison tool would provide users a weekly update, comparing their results vs. the previous year, and offering condition action-items for how to address areas of stagnation or decline.
+            <p class="body-text">The event comparison tool would provide users a weekly update, comparing their current results vs. the same time last year, and offering conditional action-items for how to address areas of stagnation or decline.
             </p>
           </div>
           <div class="img-div">
@@ -81,7 +110,7 @@ How could we improve the product to increase mid-event engagement?
           <div class="text-div">
             <div class="card-headings">
               <h4>PROJECT OVERVIEW</h4>
-              <h2>I followed an interative cycle, borrowing concepts from the Lean UX methodology.  My intention was to put business and user outcomes ahead of output, and test early ideas in low-fidelity.</h2>
+              <h2>I followed an interative cycle, borrowing applicable concepts from the Lean UX methodology.  My intention was to put business and user outcomes ahead of output, and test early ideas in low-fidelity.</h2>
             </div>
             <div class="roles-tools">
               <div>
@@ -107,7 +136,7 @@ How could we improve the product to increase mid-event engagement?
 
 
 <!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
+      <div id="research" class="full-page-container section-marker">
         <div class="content-frame">
           <h1>Research & Discovery</h1>
         </div>
@@ -118,7 +147,7 @@ How could we improve the product to increase mid-event engagement?
           <div class="text-div">
             <div class="card-headings">
               <h4>GENERATIVE USER RESEARCH</h4>
-              <h2>I had been traveling around the country meeting with dozens of customers and their teams.</h2>
+              <h2>As a broader effort to understand our customer base, I traveled around the country meeting with dozens of users.</h2>
             </div>
             <p class="body-text">Our small startup didn’t have a person dedicated to User Research.  As a CSM I had logged hundreds of hours of in-person strategy meetings with customers, which was the closest thing we had to ongoing generative user research.
             </p>
@@ -134,19 +163,66 @@ How could we improve the product to increase mid-event engagement?
           <div class="text-div">
             <div class="card-headings">
               <h4>USER PERSONAS</h4>
-              <h2>Through hours of customer interviews and strategy calls, I had already established an understanding of our user proto-personas for this particular area of the product.</h2>
-              <p class="body-text">With this background I formulated archetypal use cases and proto-personas, and generated a list of the key needs and goals for new and existing users on the platform.
+              <h2>Through developed relationships with key customers, I created customers personas relevant to this problem.</h2>
+              <p class="body-text">Not every use case and customer type was connected to this problem.  I first broke down our archeytpal product use cases, namely public (marathon) versus private (proprietary walk) events.  From there, I documented a list of the specific personas we were targeting with this project, along with their needs and challenges.
               </p>
             </div>
+          </div>
           <div class="img-div">
             <img src="../images/fg-case-study/personas.png"/>
           </div>
         </div>
       </div>
-    </div>
 
+      <div class="full-page-container dark case-study-card">
+        <div class="content-frame step-card">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>User Interviews</h4>
+              <h2>I interviewed a sample of users to find out what they were doing during the down time of their event cycle.</h2>
+            </div>
+            <p class="body-text">The response trends suggested that our useres weren't making the most out of the data they had available.  The opportunity to better synthesize the data could lead to better product stickiness and engagement, higher revenue and lower customer churn.
+            </p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/user-interviews.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-page-container light case-study-card">
+        <div class="content-frame step-card reverse">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Empathy Map</h4>
+              <h2>I created an empathy map to help visualize the mindset of a customer during this mid-event period.</h2>
+            </div>
+            <p class="body-text">In particular, seeing the thinks/feels/does elements of this map helped to provide a better framing of the reasons behind problem and carve out a clearer path forward.
+            </p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/empathy-map.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-page-container dark case-study-card">
+        <div class="content-frame step-card">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Journey Map & Task Analysis</h4>
+              <h2>I mapped out a macro-level Journey Map to understand the broader event-season trends, zoomed in on one particular task related to core problem. </h2>
+            </div>
+            <p class="body-text">Based on broader generative research and the more acutely focused targeted user interviews, I was able to map out an end-to-end Journey Map of the entire 4-6 month event season.  Drilling down from this, and informed by the A/B Testing, I mapped out a Task Analysis of the multiple steps required for a user to run their weekly comparison numbers manually.
+            </p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/journey-map.png"/>
+          </div>
+        </div>
+      </div>
 <!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
+      <div id="strategy" class="full-page-container section-marker">
         <div class="content-frame">
           <h1>Strategy</h1>
         </div>
@@ -159,40 +235,34 @@ How could we improve the product to increase mid-event engagement?
               <h4>BUSINESS & USER OUTCOMES</h4>
               <h2>I drafted a list of measurable metrics related to the problem.</h2>
             </div>
-            <p class="body-text">Through my experience as a leader in CX, I was familiar with the primary metrics for this business.  Similar to the “Key Results” in the OKR framework, business outcomes are a subset of the executive-level KPIs, more specific, and thus more easily attributed to a particular change.
-            </p>
+            <p class="body-text">Through my experience as a leader in CX, I was familiar with the primary metrics for the business.  Similar to the “Key Results” in the OKR framework, business outcomes are a subset of the executive-level KPIs.  Because they are more specific, they are an easier variable to isolate and associate to a particular product update.</p>
           </div>
           <div class="img-div">
-            <img src="../images/fg-case-study/us-map.png"/>
+            <img src="../images/fg-case-study/business-user-outcomes.png"/>
           </div>
         </div>
       </div>
 
+      <div class="full-page-container light case-study-card">
+        <div class="content-frame step-card reverse">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Solution Brainstorm</h4>
+              <h2>I created a brainstorm list of features which might deliver the business and user outcomes we were hoping to acieve.</h2>
+            </div>
+            <p class="body-text">Thinking divergently in the solution space, I brainstormed a list of potential products, featues, or services which might yield the desired outcomes.</p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/solution-brainstorm.png"/>
+          </div>
+        </div>
+      </div>
+
+
 <!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
+      <div id="mvps" class="full-page-container section-marker">
         <div class="content-frame">
           <h1>Lo-Fi MVPs</h1>
-        </div>
-      </div>
-
-<!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
-        <div class="content-frame">
-          <h1>Information Architecture</h1>
-        </div>
-      </div>
-
-<!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
-        <div class="content-frame">
-          <h1>UX Design</h1>
-        </div>
-      </div>
-
-<!-------------------------------------------------------------------------------------------->
-      <div class="full-page-container section-marker">
-        <div class="content-frame">
-          <h1>Summary of Outcomes</h1>
         </div>
       </div>
 
@@ -200,65 +270,119 @@ How could we improve the product to increase mid-event engagement?
         <div class="content-frame step-card">
           <div class="text-div">
             <div class="card-headings">
-              <h4>Placeholder</h4>
-              <h2>Here is my awesome headline.</h2>
+              <h4>Concierge MVP</h4>
+              <h2>I created a very rough prototype in Excel and tested it with users on all my calls for the next 2 weeks.</h2>
             </div>
-            <p class="body-text">Our small startup didn’t have a person dedicated to User Research.  As a CSM I had logged hundreds of hours of in-person strategy meetings with customers, which was the closest thing we had to ongoing generative user research.
+            <p class="body-text">Because the product consisted of data points and graphs, I was able to mock up a prototype version in Excel.  I presented the work to customers who were in their event season.  From the research I knew that users experienced a lot of anxiety in the weeks building up to the event because they were unsure how they were doing compared with last year.</p><br />
+            <p>It was immediately clear that presenting a comparison of key metrics helped alleviate this anxiety.  Even if they were underperforming, at least they knew, and now they had months to course-correct.
             </p>
           </div>
           <div class="img-div">
-            <img src="../images/fg-case-study/us-map.png"/>
+            <img src="../images/fg-case-study/concierge.png"/>
           </div>
         </div>
       </div>
 
-      <div class="full-page-container">
-        <div class="content-frame card">
-          <div class="header">
-            <h2>Process Steps</h2>
-            <p>The project comprised multiple Think-Make-Check iteration cycles, with different combinations of the below variables.</p>
+      <div class="full-page-container light case-study-card">
+        <div class="content-frame step-card reverse">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>A/B Tests</h4>
+              <h2>We continued experimenting to get some more nuanced detail about how and why this might be used and valued.</h2>
+            </div>
+            <p class="body-text">The emotional outcome was encouraging.  I also wanted to know whether customers would be willing/able to run the numbers themselves with their existing reports.  If 99% of the value of this feature could be delivered in a blank Excel sheet, we may not want to build it into the product.  After sending blank forms, with instructions, to a set of customers, we determined that the process was very cumbersome and time consuming, and required some advanced Excel knowledge.   </p>
           </div>
-          <ul class="card-body">
-            <li class="card">
-              <h2 class="header">Think</h2>
-              <ul>
-                <li>Problem Statement</li>
-                <li>Business Outcomes</li>
-                <li>Personas</li>
-                <li>User Outcomes</li>
-                <li>Hypothesis Statements</li>
-                <li>User Interviews</li>
-                <li>Task Flow Analysis</li>
-                <li>Content Audit</li>
-                <li>Retrospectives</li>
-                <li>Data Hierarchy (IA)</li>
-                <li>Stakeholder Interviews</li>
-              </ul>
-            </li>
-            <li class="card">
-              <h2 class="header">Make</h2>
-              <ul>
-                <li>Concierge MVP</li>
-                <li>A/B Testing</li>
-                <li>User Testing</li>
-                <li>Sitemap</li>
-                <li>User Flows</li>
-                <li>Sketches</li>
-                <li>Wireframes</li>
-                <li>Responsive Layouts</li>
-                <li>Refactoring</li>
-              </ul>
-            </li>
-            <li class="card">
-              <h2 class="header">Check</h2>
-              <ul>
-                <li>Qualitative User Feedback</li>
-                <li>Engagement Metrics</li>
-                <li>User Testing Results</li>
-                <li>Business Outcome Metrics</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="img-div">
+            <img src="../images/fg-case-study/ab-test.png"/>
+          </div>
+        </div>
+      </div>
+
+<!-------------------------------------------------------------------------------------------->
+      <div id="ia" class="full-page-container section-marker">
+        <div class="content-frame">
+          <h1>Information Architecture</h1>
+        </div>
+      </div>
+
+      <div class="full-page-container dark case-study-card">
+        <div class="content-frame step-card">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Taxonomy</h4>
+              <h2>I conducted a careful review of all potential data points to determine which would off the most value.</h2>
+            </div>
+            <p class="body-text">There was so much data we could potentially include in this feature.  I identified 24 potential stats to present, and then ranked them based on (1) the value they would provide to user and (2) how actionable the data was for completing a follow-up step. </p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/taxonomy.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-page-container light case-study-card">
+        <div class="content-frame step-card reverse">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Sitemap</h4>
+              <h2>I mapped out a Sitemap of the existing user admin area, including the tasks that could be accomplished on each page.</h2>
+            </div>
+            <p class="body-text">Because I would be designing this on top of existing functionality, it was critical to understand the architecture of the existing pages and their purpose for the user.</p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/sitemap.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-page-container dark case-study-card">
+        <div class="content-frame step-card full">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>User Flows</h4>
+              <h2>I charted three key user flows, considering how they would interplay with the existing flows in the product. </h2>
+            </div>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/user-flows.png"/>
+          </div>
+        </div>
+      </div>
+      </div>
+
+<!-------------------------------------------------------------------------------------------->
+      <div id="ux" class="full-page-container section-marker">
+        <div class="content-frame">
+          <h1>UX Design</h1>
+        </div>
+      </div>
+
+      <div class="full-page-container dark case-study-card">
+        <div class="content-frame step-card">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Sketches  </h4>
+              <h2>I began sketching ideas on paperk thinking about layout and hierarchy of key components.</h2>
+            </div>
+            <p class="body-text">From graphs to lists, to highligh cards, there is a lot to consider when mapping out a dashboard.</p>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/sketches.png"/>
+          </div>
+        </div>
+      </div>
+
+      <div id="wireframes" class="full-page-container light case-study-card">
+        <div class="content-frame step-card full">
+          <div class="text-div">
+            <div class="card-headings">
+              <h4>Wireframes</h4>
+              <h2>Finally I mapped out wireframes in more high fidelity to present for evaluative user research and user testing.</h2>
+            </div>
+          </div>
+          <div class="img-div">
+            <img src="../images/fg-case-study/all-wires.png"/>
+          </div>
         </div>
       </div>
 

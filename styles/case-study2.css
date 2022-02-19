@@ -37,6 +37,58 @@ body {
 COLORS UNIQUE TO THIS CASE STUDY
 --------------------------------------------------------------------------------
 */
+header {
+  background-color: #3C3A36;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: hsla(40,8%,20%,1);
+  color: hsla(40,5%,90%,1);
+}
+header * {
+  color: white;
+}
+
+header img {
+  height: 80px;
+  padding: 10px 0px 4px 0px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+header nav ul li a:hover {
+  color: hsla(197,80%,48%,1);
+}
+
+header .burger {
+  display: none;
+}
+
+
+
+
+/*
+--------------------------------------------------------------------------------
+COLORS UNIQUE TO THIS CASE STUDY
+--------------------------------------------------------------------------------
+*/
 
 .content-frame h4 {
   color: hsla(197,80%,48%,1);
@@ -63,25 +115,65 @@ HERO CARD
 }
 
 .hero-card {
+  padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.hero-card div {
   border: 4px solid hsla(197,80%,48%,1);
   border-radius: 6px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: white;
   box-shadow: 0px 8px 64px rgba(15, 34, 67, 0.06), 0px 0px 1px rgba(15, 34, 67, 0.08);
 }
 
-.hero-card div img {
-  width: 90%;
+.hero-card  img {
+  width: 100%;
+  padding: 0;
 }
+
+.hero-card h1 {
+  color: hsla(197,80%,48%,1);
+  padding-bottom: 2rem;
+}
+/*
+--------------------------------------------------------------------------------
+Title CARD
+--------------------------------------------------------------------------------
+*/
+
+.navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  flex-grow: 1;
+  text-align: center;
+  width: 16.667%;
+  padding: 0;
+}
+
+.navbar li a {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  background-color: hsla(40,8%,20%,1);
+  color: hsla(40,5%,90%,1);
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: hsla(40,8%,25%,1);
+  color: hsla(40,5%,100%,1);
+}
+
+
+
 
 /*
 --------------------------------------------------------------------------------
@@ -90,7 +182,7 @@ Title CARD
 */
 
 h1, h2{
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 #fs-desc {
@@ -104,9 +196,8 @@ SECTION BREAKER Card
 */
 
 .full-page-container.section-marker {
-  height: 600px;
   background-color: hsla(1,0%,20%,1);
-
+  padding: 8rem 0;
 }
 
 .section-marker .content-frame {
@@ -121,6 +212,7 @@ SECTION BREAKER Card
 .section-marker h1 {
   color: hsla(1,0%,96%,1);
   margin: 0;
+  font-size: 4rem;
 }
 
 /*
@@ -140,6 +232,10 @@ Step Card
 
 .step-card.full {
   flex-direction: column;
+}
+
+.step-card.full h2 {
+  padding-bottom: 1rem;
 }
 
 .full img, .full .text-div {
@@ -212,6 +308,8 @@ Step Card
   width: 25%;
 }
 
+
+
 @media (max-width:1280px)  {
   /*
   --------------------------------------------------------------------------------
@@ -257,6 +355,16 @@ Step Card
   /*  --------------------------------------------------------------------------------
   STEP CARD
   */
+
+  header .burger {
+    display: block;
+  }
+
+
+  header nav ul{
+    display: none;
+  }
+
   .step-card, .step-card.reverse {
     flex-direction: column;
   }

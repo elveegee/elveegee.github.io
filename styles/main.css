@@ -446,9 +446,8 @@ section.projects {
   color: white;
 }
 
-#fs-project .button {
-  background-color: #17A1DB;
-
+#fs-project .button, #event-comparison .button {
+  background-color: hsla(197,80%,48%,1);
 }
 
 /* CONTACT SECTION */
