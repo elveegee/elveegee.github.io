@@ -35,7 +35,7 @@
     <img id="smalllogo" class="logo small" src="images/logo-white.png"/>
     <nav class="navlinks">
       <ul>
-        <li><a href="html/case-study.html">Work</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="html/bio.html">About</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
@@ -71,14 +71,14 @@
     <div class="menu-tray" id="menu-tray">
         <ul id="menu-list">
           <li><i class="fas fa-times" onclick="closeMenu()"></i></li>
-          <li><a href="html/case-study.html">Work</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="html/bio.html">About</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </div>
 
 <!-- CASE STUDY CARDS -->
-    <section class="projects">
+    <section id="work"class="projects">
       <div class="container project light">
         <div class="left">
             <div>
@@ -98,10 +98,25 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="projects" id="fs-project">
-      <div class="container project light">
+      <div id="event-comparison" class="container project light">
+        <div class="left">
+            <div>
+              <h1>Panorama</h1>
+              <p class="tag">Research | Strategy | UX Design</p>
+              <p>New feature for a fundraising web app, designed to drive customer engagement.</p>
+            </div>
+            <a class="button" href="html/case-study-2.html">See Case Study</a>
+        </div>
+        <div class="right">
+          <div class="rect-body"></div>
+          <div class="ball"></div>
+          <div class="container">
+            <img class ="phone1 izq" src="images/fg-case-study/wireframes/desk-and-tab.png" />
+          </div>
+        </div>
+      </div>
+      <div id="fs-project" class="container project light">
         <div class="left">
             <div>
               <h1>User Research</h1>
@@ -121,6 +136,9 @@
         </div>
       </div>
     </section>
+    </section>
+
+
 
 <!-- CONTACT -->
     <section class="contact" id="contact">
