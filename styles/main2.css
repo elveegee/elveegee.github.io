@@ -42,6 +42,7 @@ CONTAINERS ---------------------------------------------------------------------
   justify-content: center;
   align-items: center;
   padding: 4rem 7.5rem;
+  min-height: 80vh;
 }
 
 .content-frame {
