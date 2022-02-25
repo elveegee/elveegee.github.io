@@ -450,6 +450,10 @@ section.projects {
   background-color: hsla(197,80%,48%,1);
 }
 
+#event-comparison {
+  display: none;
+}
+
 /* CONTACT SECTION */
 
 .home .contact {
