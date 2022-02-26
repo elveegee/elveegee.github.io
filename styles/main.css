@@ -237,7 +237,7 @@ nav ul.burger {
   margin: 0 auto;
   position: relative;
   top: 20%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .hero .img-wrapper{
@@ -451,7 +451,7 @@ section.projects {
 }
 
 #event-comparison {
-  display: none;
+
 }
 
 /* CONTACT SECTION */
