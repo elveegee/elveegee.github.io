@@ -33,6 +33,10 @@ p {
   line-height: 1.875rem;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -241,6 +245,15 @@ nav ul.burger {
   padding: 0 20px;
 }
 
+.indented-list {
+  padding-left: 40px; /* Adjusts the indentation for the whole list */
+}
+
+.indented-list li {
+  list-style-position: outside; /* Ensures bullet points stay outside the text */
+  margin-bottom: 10px; /* Adds spacing between list items */
+}
+
 @media only screen and (max-width: 640px) {
 
   html {
@@ -271,6 +284,9 @@ nav ul.burger {
     flex-wrap: wrap;
     margin: 10px 0 20px;
   }
+
+
+
 
 
 }
